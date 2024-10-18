@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function Header({ children }) { // Accept children prop
+export default function Header() {
   const [isOpen, setIsOpen] = useState(false); // State for hamburger menu
 
   const toggleMenu = () => setIsOpen(!isOpen);
@@ -96,7 +96,6 @@ export default function Header({ children }) { // Accept children prop
           </div>
         )}
       </nav>
-      {children}
-      </div>   
+    </div>   
   );
 }
