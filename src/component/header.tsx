@@ -11,7 +11,7 @@ export default function Header() { // Accept children prop
   const closeMenu = () => setIsOpen(false); // Function to close the menu
 
   return (
-      <div className="flex h-[100px] w-full items-center justify-between px-6 py-4 md:px-8 border-2">
+      <div className="flex h-[100px] w-full items-center justify-between px-6 py-4 md:px-8">
         
         {/* Left: Company Logo */}
         <Link href="/" className="flex items-center">
@@ -45,8 +45,8 @@ export default function Header() { // Accept children prop
         </button>
 
         {/* Navigation Links (Always visible on desktop) */}
-        <nav className="hidden md:flex md:items-center font-medium md:space-x-8 border-2">
-          <Link href="about-us" className="text-gray-700 text-lg hover:underline border-2">
+        <nav className="hidden md:flex md:items-center font-medium md:space-x-8">
+          <Link href="about-us" className="text-gray-700 text-lg hover:underline">
             About Us
           </Link>
           <Link href="service" className="text-gray-700 text-lg hover:underline">
