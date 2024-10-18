@@ -45,7 +45,7 @@ export default function Header() {
         </button>
 
         {/* Navigation Links (Always visible on desktop) */}
-        <div className="hidden md:flex md:items-center font-medium md:space-x-8">
+        <div className="hidden md:flex md:items-center font-medium md:space-x-8 hover:underline-offset-8">
           <Link href="about-us" className="text-gray-700 text-lg hover:underline">
             About Us
           </Link>
@@ -82,7 +82,7 @@ export default function Header() {
             </button>
 
             {/* Navigation Links for Mobile */}
-            <nav className="flex flex-col space-y-10 text-lg font-medium">
+            <nav className="flex flex-col space-y-10 text-lg font-medium hover:underline-offset-8">
               <Link href="about-us" className="text-gray-700 text-3xl hover:underline" onClick={closeMenu}>
                 About Us
               </Link>
