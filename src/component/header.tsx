@@ -13,7 +13,6 @@ export default function Header({ children }) { // Accept children prop
   return (
     <div>
       <nav className="flex h-[100px] w-full items-center justify-between px-6 py-4 md:px-8">
-
         {/* Left: Company Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -98,6 +97,6 @@ export default function Header({ children }) { // Accept children prop
         )}
       </nav>
       {children}
-      </div>  
+      </div>   
   );
 }

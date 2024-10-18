@@ -1,9 +1,9 @@
 import Hero from "@/component/home/hero"
 
-export default function Page() {
+export default function Home() {
   return (
-    <main>
+    <main className="h-full">
       <Hero />
     </main>
-  )
+  );
 }
