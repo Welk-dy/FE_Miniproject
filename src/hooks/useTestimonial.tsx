@@ -1,21 +1,35 @@
-'use client'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
-import { useEffect, useState } from 'react';
-import { fetchUserData } from '@/data/fetchUserData';
+// Define the type for the testimonial data
+interface Testimonial {
+  id: number;
+  text: string;
+  name: string;
+  picture: string;
+}
 
-export const useTestimonial = () => {
-  const [users, setUsers] = useState<any[]>([]);
+// Hook implementation
+const useTestimonial = () => {
+  const [testimonials, setTestimonials] = useState<Testimonial[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
-    const getUsers = async () => {
-      const fetchedUsers = await fetchUserData();
-      setUsers(fetchedUsers);
-      setLoading(false);
+    const fetchTestimonials = async () => {
+      try {
+        const response = await axios.get<Testimonial[]>('https://example.com/api/testimonials');
+        setTestimonials(response.data);
+      } catch (error) {
+        console.error('Error fetching testimonials:', error);
+      } finally {
+        setLoading(false);
+      }
     };
 
-    getUsers();
+    fetchTestimonials();
   }, []);
 
-  return { users, loading };
+  return { testimonials, loading };
 };
+
+export default useTestimonial;

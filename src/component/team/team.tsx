@@ -1,6 +1,5 @@
 'use client'
 
-import React, { useState } from 'react';
 import UseTeamMember from '@/hooks/UseTeamMember'; // Ensure this matches your hook filename
 
 const Team: React.FC = () => {
