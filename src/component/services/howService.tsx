@@ -30,7 +30,7 @@ export default function HowService() {
           <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=example@gmail.com&su=Inquiry&body=Hi%20there,%20I%20have%20a%20question.">
             <button 
               className="flex self-center items-center bg-gray-500 text-white px-6 py-4 transition-colors hover:bg-[#4A4A4A]">
-                Let’s Have a Coffee
+                Let&#39;s Have a Coffee
             </button>
           </Link>
         </div>

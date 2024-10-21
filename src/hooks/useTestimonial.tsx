@@ -3,8 +3,14 @@
 import { useEffect, useState } from 'react';
 import { fetchUserData } from '@/data/fetchUserData';
 
+interface User {
+  id: number;
+  name: string;
+  testimonial: string;
+}
+
 export const useTestimonial = () => {
-  const [users, setUsers] = useState<any[]>([]);
+  const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
