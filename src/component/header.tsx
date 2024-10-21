@@ -62,7 +62,6 @@ export default function Header() {
             <button
               className="absolute top-9 right-14 text-gray-700 focus:outline-none"
               onClick={closeOverlay}
-              alt="Exit Menu"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
