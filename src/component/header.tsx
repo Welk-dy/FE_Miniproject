@@ -1,18 +1,16 @@
 'use client';
 
-import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import useOverlay from '@/hooks/useOverlay';
+
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false); // State for hamburger menu
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-  const closeMenu = () => setIsOpen(false); // Function to close the menu
+  const { isOpen, openOverlay, closeOverlay } = useOverlay();
 
   return (
-    <div>
-      <nav className="flex h-[100px] w-full items-center justify-between px-6 py-4 md:px-8">
+    <header>
+      <nav className="flex h-[100px] w-full items-center justify-between px-6 py-4 md:px-8 border-b-2">
         {/* Left: Company Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -26,7 +24,7 @@ export default function Header() {
         {/* Hamburger Button (Visible on small screens) */}
         <button
           className="block md:hidden text-gray-700 focus:outline-none"
-          onClick={toggleMenu}
+          onClick={openOverlay}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +43,7 @@ export default function Header() {
         </button>
 
         {/* Navigation Links (Always visible on desktop) */}
-        <div className="hidden md:flex md:items-center font-medium md:space-x-8 hover:underline-offset-8">
+        <div className="hidden md:block md:flex md:flex-row font-medium gap-16 hover:underline-offset-8">
           <Link href="about-us" className="text-gray-700 text-lg hover:underline">
             About Us
           </Link>
@@ -62,8 +60,9 @@ export default function Header() {
           <div className="fixed inset-0 bg-white z-50 flex flex-col items-center justify-center">
             {/* Close Button */}
             <button
-              className="absolute top-9 right-5 text-gray-700 focus:outline-none"
-              onClick={closeMenu}
+              className="absolute top-9 right-14 text-gray-700 focus:outline-none"
+              onClick={closeOverlay}
+              alt="Exit Menu"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,19 +82,19 @@ export default function Header() {
 
             {/* Navigation Links for Mobile */}
             <nav className="flex flex-col space-y-10 text-lg font-medium hover:underline-offset-8">
-              <Link href="about-us" className="text-gray-700 text-3xl hover:underline" onClick={closeMenu}>
+              <Link href="about-us" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
                 About Us
               </Link>
-              <Link href="service" className="text-gray-700 text-3xl hover:underline" onClick={closeMenu}>
+              <Link href="service" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
                 Service
               </Link>
-              <Link href="team" className="text-gray-700 text-3xl hover:underline" onClick={closeMenu}>
+              <Link href="team" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
                 Team
               </Link>
             </nav>
           </div>
         )}
       </nav>
-    </div>   
+    </header>   
   );
 }
