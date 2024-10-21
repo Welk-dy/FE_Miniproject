@@ -40,7 +40,7 @@ export default function WhatService() {
             onClick={prevSlide}
             disabled={isFirstSlide}
             className={`py-2 px-3 rounded w-12 bg-gray-300 ${isFirstSlide ? 'bg-gray-300 text-gray-500 cursor-not-allowed hover:bg-gray-300' : 'hover:bg-gray-400'}`}
-          >previous
+          >
             {isFirstSlide ? '' : '<'} {/* Empty string if disabled */}
           </button>
           {/* Next Button */}
@@ -48,7 +48,7 @@ export default function WhatService() {
             onClick={nextSlide}
             disabled={isLastSlide}
             className={`py-2 px-3 rounded w-12 bg-gray-300 ${isLastSlide ? 'bg-gray-300 text-gray-500 cursor-not-allowed hover:bg-gray-300' : 'hover:bg-gray-400'}`}
-          >next
+          >
             {isLastSlide ? '' : '>'} {/* Empty string if disabled */}
           </button>
         </div>

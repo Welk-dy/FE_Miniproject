@@ -66,7 +66,7 @@ export default function Footer() {
       </div>
       <div className='flex items-center justify-between px-8 py-4 md:px-20 border-t-2'>
           <strong className='text-xs'>
-            Twiscode Pte. Ltd. | PT. Dapur Rumah Sejahtera
+            Twiscode Pte. Ltd. | PT. Hidup Sylit
           </strong>
       </div>
     </div>
