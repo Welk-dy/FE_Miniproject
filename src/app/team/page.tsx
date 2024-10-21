@@ -1,5 +1,11 @@
 import Team from "@/component/team/team"
 import Join from "@/component/team/join"
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Team",
+  description: "Learn more about our team.",
+};
 
 export default function Home() {
   return (
