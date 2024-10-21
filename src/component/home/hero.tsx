@@ -10,6 +10,7 @@ export default function Hero() {
             height={531}
             className="block md:hidden w-full"
             alt="Mobile Hero Picture"
+            loading="eager"
         />
         <div className="flex flex-col justify-center px-6 py-5 md:w-1/2 md:px-20">
           <strong className='text-[#414141] text-4xl md:text-6xl md:leading-tight pb-3 md:pb-6'>

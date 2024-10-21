@@ -26,7 +26,7 @@ export default function Join() {
         </p>
         <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=example@gmail.com&su=Inquiry&body=Hi%20there,%20I%20have%20a%20question">
           <button className="bg-gray-500 text-white px-6 py-3 rounded-md transition-colors hover:bg-[#4A4A4A]">
-            Let’s Have a Coffee
+            Lets Have a Coffee
           </button>
         </Link>
       </div>
