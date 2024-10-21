@@ -24,7 +24,7 @@ export default function HowService() {
         <div className="flex flex-col w-full md:w-1/2 bg-white px-8 justify-center items-start">
           <div className="text-2xl md:text-4xl font-semibold mb-2">How We Work</div>
           <div className="text-xl mb-4">
-            <p>Let's discuss what project</p>
+            <p>Lets discuss what project</p>
             <p>you have in mind</p>
           </div>
           <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=example@gmail.com&su=Inquiry&body=Hi%20there,%20I%20have%20a%20question.">
