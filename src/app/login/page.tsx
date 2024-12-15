@@ -1,6 +1,6 @@
-import HowService from "@/component/services/howService"
-import WhatService from "@/component/services/whatService"
-import Testimony from "@/component/testimony"
+import HowService from "@/component/login/howService"
+import WhatService from "@/component/login/whatService"
+import Testimony from "@/component/AllEvent"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

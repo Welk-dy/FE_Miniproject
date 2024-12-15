@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex h-[100px] w-full items-center justify-between px-6 py-4 md:px-8 border-b-2">
+      <nav className="flex h-[100px] bg-[#132620] w-full items-center justify-between px-6 py-4 md:px-8">
         {/* Left: Company Logo */}
         <Link href="/" className="flex items-center">
           <Image
@@ -44,14 +44,14 @@ export default function Header() {
 
         {/* Navigation Links (Always visible on desktop) */}
         <div className="hidden md:block md:flex md:flex-row font-medium gap-16 hover:underline-offset-8">
-          <Link href="about-us" className="text-gray-700 text-lg hover:underline">
-            About Us
+          <Link href="Details" className="text-white text-lg hover:underline">
+            Details
           </Link>
-          <Link href="service" className="text-gray-700 text-lg hover:underline">
-            Service
+          <Link href="Login" className="text-white text-lg hover:underline">
+            Login
           </Link>
-          <Link href="team" className="text-gray-700 text-lg hover:underline">
-            Team
+          <Link href="Register" className="text-white text-lg hover:underline">
+            Register
           </Link>
         </div>
 
@@ -81,14 +81,14 @@ export default function Header() {
 
             {/* Navigation Links for Mobile */}
             <nav className="flex flex-col space-y-10 text-lg font-medium hover:underline-offset-8">
-              <Link href="about-us" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
-                About Us
+              <Link href="Details" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
+                Details
               </Link>
-              <Link href="service" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
-                Service
+              <Link href="Login" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
+                Login
               </Link>
-              <Link href="team" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
-                Team
+              <Link href="Register" className="text-gray-700 text-3xl hover:underline" onClick={closeOverlay}>
+                Register
               </Link>
             </nav>
           </div>

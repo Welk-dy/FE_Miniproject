@@ -1,5 +1,5 @@
-import Team from "@/component/team/team"
-import Join from "@/component/team/join"
+import Team from "@/component/register/team"
+import Join from "@/component/register/join"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

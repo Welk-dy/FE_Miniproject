@@ -1,6 +1,6 @@
 import History from "@/component/about/history"
 import VisionMission from "@/component/about/visionMission"
-import Team from "@/component/team/team"
+import Team from "@/component/register/team"
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

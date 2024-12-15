@@ -3,14 +3,14 @@
 import UseTestimony from '@/hooks/UseTestimony';
 import { Member } from '@/types/Member';
 
-const Testimony: React.FC = () => {
+const AllEvent: React.FC = () => {
   const { members, loading } = UseTestimony();
   if (loading) return <p>Loading...</p>;
   
   return (
     <div className="flex flex-col items-center md:pt-10 gap-6">
       <div className='text-2xl md:text-4xl font-semibold'>
-        Our Team
+        Popular Events
       </div>
       <div className="flex flex-wrap justify-center gap-4 md:gap-8">
         {members.map((member: Member, index: number) => (
@@ -29,4 +29,4 @@ const Testimony: React.FC = () => {
   );
 };
 
-export default Testimony;
+export default AllEvent;

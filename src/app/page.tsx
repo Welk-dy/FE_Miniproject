@@ -1,15 +1,11 @@
-import Hero from "@/component/home/hero"
-import Overview from "@/component/home/overview"
-import WhatService from "@/component/services/whatService"
-import Testimony from "@/component/testimony"
+import Hero from "@/component/details/hero"
+import AllEvent from "@/component/AllEvent";
 
 export default function Home() {
   return (
-    <main className="h-full md:pb-8">
+    <main className="h-full">
       <Hero />
-      <Overview />
-      <WhatService />
-      <Testimony />
+      <AllEvent />
     </main>
   );
 }
