@@ -41,7 +41,7 @@ const AllEvent: React.FC = () => {
 
   return (
     <div className="flex flex-col bg-[#EDEDED] w-screen items-center">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center mb-4">
         {events.map((event: Event, index: number) => (
           <div
             key={index}
