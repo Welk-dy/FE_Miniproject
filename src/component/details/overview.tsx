@@ -5,15 +5,7 @@ export default function Overview() {
   return (
     <div className="flex flex-col md:flex-row h-fit w-screen py-10 md:gap-20">
       {/* mobile picture */}
-      <div className="flex md:justify-end md:items-center px-8 md:px-0 md:w-1/2">
-        <Image
-          src="/overview.jpg"
-          width={400}
-          height={300}
-          className=''
-          alt="Overview Picture"
-        />
-      </div>
+      
       <div className="flex flex-col md:w-1/2 h-fit gap-4 md:gap-8 py-4 px-8 md:pr-32">
         <strong className='text-2xl md:text-4xl'>Overview</strong>
         <div className='md:whitespace-break-spaces leading-normal text-lg md:text-xl'>

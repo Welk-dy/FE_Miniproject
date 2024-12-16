@@ -1,7 +1,7 @@
 'use client'
 
-import UseTeamMember from '@/hooks/UseTeamMember';
-import { Member } from '@/types/Member';
+import UseTeamMember from '@/hooks/UseEvent';
+import { Member } from '@/models/Parameter';
 
 const Team: React.FC = () => {
   const { members, loading } = UseTeamMember();
